@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin:0;
+        }
+        canvas{
+            background-color:greenyellow;
+            display:block;
+            margin:100px auto;
+        }
+    </style>
+</head>
+<body>
+    <canvas width="500" height="500"></canvas>
+    <script>
+        let canvas=document.querySelector("canvas");
+        let canCon=canvas.getContext("2d");
+        canCon.fillStyle="red";
+        canCon.strokeStyle="block";
+        canCon.beginPath();
+        canCon.lineTo(0,50);
+        canCon.lineTo(50,300);
+        canCon.lineTo(100,50);
+        canCon.lineTo(150,300);
+        canCon.lineTo(200,50);
+        canCon.lineTo(250,300);
+        //canCon.closePath();
+        //canCon.fill();
+        canCon.stroke();
+    </script>
+</body>
+</html>
