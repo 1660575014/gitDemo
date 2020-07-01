@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin:0;
+        }
+        canvas{
+            display:block;
+            margin:100px auto;
+            width: 500px;
+            height: 500px;
+            background-color:yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <canvas width="500" height="500">您的游览器不支持该业务，请您换一个浏览器</canvas>
+    <script>
+        var canvas=document.querySelector("canvas");
+        var canCon=canvas.getContext("2d");
+        canCon.fillStyle="pink";
+        canCon.arc(250,250,66,0,Math.PI*2);
+        canCon.fill();
+    </script>
+</body>
+</html>
