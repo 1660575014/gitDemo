@@ -22,13 +22,34 @@
     <script>
         let canvas=document.querySelector("canvas");
         let canCon=canvas.getContext("2d");
+        // canCon.fillStyle="pink";
+        // canCon.strokeStyle="red";
+        // canCon.beginPath();
+        // canCon.moveTo(200,150);
+        // canCon.arc(150,150,50,0,Math.PI/2,true);
+        // canCon.moveTo(50,50);
+        // canCon.arc(50,50,50,0,Math.PI/2,false);
+        // canCon.moveTo(150,20);
+        // canCon.arcTo(150,100,50,20,30);
+        // canCon.stroke();
+        // canCon.moveTo(150,20);
+        // canCon.quadraticCurveTo(150,100,50,20);
+        // canCon.stroke();
+        // canCon.moveTo(150,20);
+        // canCon.bezierCurveTo(150,100,100,100,50,20);
+        // canCon.stroke();
+        canCon.fill();
+        canCon.stroke();
         canCon.fillStyle="pink";
-        canCon.strokeStyle="red";
+        canCon.fillRect(100,100,200,200);
+        canCon.fillStyle="gray";
+        canCon.fillRect(400,400,50,50);
+        canCon.fillStyle="red";
+        canCon.arc(50,50,10,0,Math.PI*2);
+        canCon.fill();
         canCon.beginPath();
-        canCon.moveTo(200,150);
-        canCon.arc(150,150,50,0,Math.PI/2,true);
-        canCon.moveTo(50,50);
-        canCon.arc(50,50,50,0,Math.PI/2,false);
+        canCon.strokeStyle="blue";
+        canCon.arc(80,80,10,0,Math.PI*2);
         canCon.stroke();
     </script>
 </body>
