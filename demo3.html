@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin:0;
+        }
+        canvas{
+            display:block;
+            background-color:orange;
+            width: 500px;
+            height: 500px;
+            margin:100px auto;
+        }
+    </style>
+</head>
+<body>
+    <canvas width="500" height="500"></canvas>
+    <script>
+        let canvas=document.querySelector("canvas");
+        let canCon=canvas.getContext("2d");
+        canCon.fillStyle="red";
+        canCon.strokeStyle="black";
+        canCon.beginPath();
+        canCon.moveTo(20,200);
+        canCon.lineTo(20,20);
+        canCon.moveTo(20,200);
+        canCon.lineTo(200,200);
+        canCon.moveTo(75,50);
+        canCon.lineTo(100,50);
+        canCon.moveTo(100,25);
+        canCon.lineTo(125,25);
+        canCon.stroke();
+    </script>
+</body>
+</html>
