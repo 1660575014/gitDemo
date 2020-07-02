@@ -4,8 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            margin:0;
+        }
+        canvas{
+            display:block;
+            width: 500px;
+            height: 500px;
+            background-color:gray;
+            margin:100px auto;
+        }
+    </style>
 </head>
 <body>
-    
+    <canvas width="500" height="500"></canvas>
+    <script>
+        let canvas=document.querySelector("canvas");
+        let canCon=canvas.getContext("2d");
+        canCon.globalAlpha=0.005;
+        for(var y=0;y<=255;y++){
+           function createColorBoard(row,col){
+            for(var i=0;i<row;i++){
+                for(var j=0;j<col;j++){
+                canCon.strokeStyle='rgb('+Math.floor(255-(255/row)*i)+','
+                +Math.floor(255-(255/col)*j)
+                +','+0+')';
+                canCon.beginPath();
+                canCon.arc(12.5+i*25,12.5+j*25,10,0,Math.PI*2,true);
+                canCon.stroke();
+                }
+            }
+        }createColorBoard(10,10)
+        }
+    </script>
 </body>
 </html>

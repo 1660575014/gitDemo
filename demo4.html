@@ -38,19 +38,31 @@
         // canCon.moveTo(150,20);
         // canCon.bezierCurveTo(150,100,100,100,50,20);
         // canCon.stroke();
-        canCon.fill();
-        canCon.stroke();
-        canCon.fillStyle="pink";
-        canCon.fillRect(100,100,200,200);
-        canCon.fillStyle="gray";
-        canCon.fillRect(400,400,50,50);
-        canCon.fillStyle="red";
-        canCon.arc(50,50,10,0,Math.PI*2);
-        canCon.fill();
-        canCon.beginPath();
-        canCon.strokeStyle="blue";
-        canCon.arc(80,80,10,0,Math.PI*2);
-        canCon.stroke();
+        // canCon.fill();
+        // canCon.stroke();
+        // canCon.fillStyle="pink";
+        // canCon.fillRect(100,100,200,200);
+        // canCon.fillStyle="gray";
+        // canCon.fillRect(400,400,50,50);
+        // canCon.fillStyle="red";
+        // canCon.arc(50,50,10,0,Math.PI*2);
+        // canCon.fill();
+        // canCon.beginPath();
+        // canCon.strokeStyle="blue";
+        // canCon.arc(80,80,10,0,Math.PI*2);
+        // canCon.stroke();
+        for(var y=0;y<=255;y++){
+           function createColorBoard(row,col){
+            for(var i=0;i<row;i++){
+                for(var j=0;j<col;j++){
+                canCon.fillStyle='rgb('+Math.floor(255-(255/row)*i)+','
+                +Math.floor(255-(255/col)*j)
+                +','+0+')';
+                canCon.fillRect(i*25,j*25,25,25);
+                }
+            }
+        }createColorBoard(10,10)
+        }
     </script>
 </body>
 </html>
