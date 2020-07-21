@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>1</button>
+    <button>2</button>
+    <button>3</button>
+    <button>4</button>
+    <button>5</button>
+    <button>6</button>
+    <button>7</button>
+    <button>8</button>
+    <script>
+        var but=document.querySelectorAll("button");
+        var a=1;
+        var b=8;
+        function add(x,y){
+            var a=2;
+            a=a+1;
+            return a;
+            console.log(a);
+        }
+        var d=add();
+        console.log(a);
+        var f=add();
+        console.log(a);
+        var g=add();
+        console.log(a);
+        for(var p=0;p<8;p=p+1){
+            function add(){
+                but[p].style.color="red";
+                but[p-1].style.color="black";
+            }
+            but[p].onclick=add;
+        }
+        
+    </script>
+</body>
+</html>
