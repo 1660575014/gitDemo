@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>study-javaScript</title>
+    <script src=""></script>
+</head>
+<body>
+    <div id="content"></div>
+    <div class="wrap"></div>
+    <input type="text" name="addr">
+    <script>
+        var x;
+        x=10;//number
+        var x1="hello";//string
+        var x2={"a":"1","b":"2"};//object
+        var x3=[1,2,3,4];
+        var x4;//undefined
+        var x5=null;//null
+        var x5={"x":"hello","b":"world"};
+        var x6=3;
+        var x7=7;
+        var f=x6===x7;//(false  true)boolean
+        alert("hello world");
+        confirm("你确定要关闭窗口吗");
+        prompt("请输入您的姓名");
+        var content=document.getElementById("content");
+        var wrap=document.getElementsByClassName("wrap");
+        var wrap1=document.getElementsByTagName("div");
+        var ip=document.getElementsByName("adder");
+        var con=document.querySelector(".content");
+        var con1=document.querySelectorAll("div");
+        var con2=document.documentElement;
+        var con3=document.head;
+        var con4=document.body;
+        var con5=document.title;
+        content.innerText="hello world";
+        wrap.innerText="<p>你好世界</p>";
+    </script>
+</body>
+</html>
